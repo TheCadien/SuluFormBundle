@@ -9,7 +9,7 @@
             <argument>%sulu_form.sendinblue_api_key%</argument>
             <argument>null</argument>
             <argument type="service" id="sulu_markup.link_tag.provider_pool"/>
-            <tag name="doctrine.event_listener" event="loadClassMetadata" />
+            <tag name="kernel.event_subscriber"/>
         </service>
 
         <service id="sulu_form.dynamic.type_sendinblue" class="Sulu\Bundle\FormBundle\Dynamic\Types\SendinblueType">
