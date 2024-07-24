@@ -33,7 +33,7 @@ class HelperTestCase extends SuluTestCase
 
     protected function setUp(): void
     {
-        static::$kernel = null;
+        static::$kernel = null; // requires as Symfonfy 4.4 does not unset on tearDown
 
         parent::setUp();
 
