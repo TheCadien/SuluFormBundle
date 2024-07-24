@@ -87,7 +87,7 @@ class ProtectedMediaSubscriberTest extends TestCase
         $event = new RequestEvent(
             new Kernel('test', true, SuluKernel::CONTEXT_WEBSITE),
             $request,
-            \defined(HttpKernelInterface::class, '::MASTER_REQUEST')
+            \defined(HttpKernelInterface::class . '::MASTER_REQUEST')
                 ? HttpKernelInterface::MASTER_REQUEST
                 : HttpKernelInterface::MAIN_REQUEST
         );
@@ -110,7 +110,7 @@ class ProtectedMediaSubscriberTest extends TestCase
         $event = new RequestEvent(
             new Kernel('test', true, SuluKernel::CONTEXT_WEBSITE),
             $request,
-            \defined(HttpKernelInterface::class, '::MASTER_REQUEST')
+            \defined(HttpKernelInterface::class . '::MASTER_REQUEST')
                 ? HttpKernelInterface::MASTER_REQUEST
                 : HttpKernelInterface::MAIN_REQUEST
         );
@@ -140,7 +140,7 @@ class ProtectedMediaSubscriberTest extends TestCase
         $event = new RequestEvent(
             new Kernel('test', true, SuluKernel::CONTEXT_WEBSITE),
             $request,
-            \defined(HttpKernelInterface::class, '::MASTER_REQUEST')
+            \defined(HttpKernelInterface::class . '::MASTER_REQUEST')
                 ? HttpKernelInterface::MASTER_REQUEST
                 : HttpKernelInterface::MAIN_REQUEST
         );
