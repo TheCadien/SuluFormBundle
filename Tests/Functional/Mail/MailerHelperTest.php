@@ -16,7 +16,10 @@ use Sulu\Bundle\FormBundle\Tests\Application\MailerKernel;
 
 class MailerHelperTest extends HelperTestCase
 {
-    protected static $class = MailerKernel::class;
+    public static function getKernelClass(): string
+    {
+        return MailerKernel::class;
+    }
 
     public function testSendsEmailUsingMailerComponent()
     {
