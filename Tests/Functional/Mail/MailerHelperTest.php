@@ -37,7 +37,7 @@ class MailerHelperTest extends HelperTestCase
             $this->assertSame(0, $mailCollector->getMessageCount());
         }
 
-        // 2 messages should be send 1 to admin and 1 to email
+        // 2 messages should be sent 1 to admin and 1 to email
         $this->assertEmailCount(2);
     }
 }
