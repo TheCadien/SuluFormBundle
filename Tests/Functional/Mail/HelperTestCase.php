@@ -33,6 +33,8 @@ class HelperTestCase extends SuluTestCase
 
     protected function setUp(): void
     {
+        static::$kernel = null;
+
         parent::setUp();
 
         $this->client = $this->createWebsiteClient();
